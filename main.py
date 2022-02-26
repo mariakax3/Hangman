@@ -174,11 +174,9 @@ def play(clue):
                     clueT = font.render(clue, True, white)
                     screen.blit(clueT, (width // 2 - clueT.get_width() // 2, 60))
 
-                    win1 = endFontC.render('Tak jest! Wygrywasz talon', True, white)
-                    win2 = endFontC.render('na kurwę i balon!', True, white)
+                    win1 = endFontC.render('Tak jest, wygrywasz!', True, white)
                     restart = endFontD.render('JESZCZE RAZ?', True, green)
                     screen.blit(win1, (3 * width // 4 - win1.get_width() // 2, 180))
-                    screen.blit(win2, (3 * width // 4 - win2.get_width() // 2, 210))
                     screen.blit(restart, (3 * width // 4 - restart.get_width() // 2, 300))
                     pygame.display.update()
                     
